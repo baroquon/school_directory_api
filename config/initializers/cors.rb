@@ -7,8 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    #origins 'https://school-directory-test1.herokuapp.com'
-    origins 'salty-cove-73017.herokuapp.com'
+    origins 'dailydrip-school-directory.herokuapp.com'
 
     resource '*',
       headers: :any,
