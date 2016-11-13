@@ -8,6 +8,7 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins 'dailydrip-school-directory.herokuapp.com'
+    # origins 'localhost:4200'
 
     resource '*',
       headers: :any,
